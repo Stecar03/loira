@@ -13,3 +13,54 @@
  *= require_tree .
  *= require_self
  */
+
+ 
+
+ img {
+    height: auto;
+    width: 100vw;
+    background-color: darkslategrey;
+ }
+
+body{
+   background-color: #95ACFF;
+   text-align: center;
+   justify-content: center;
+}
+
+
+footer {
+    color: white;
+   background: #383c44;
+   background: -webkit-linear-gradient(to right, #383c44, #383c44);
+   background: linear-gradient(to right, #383c44, #383c44);
+ }
+
+ .card{
+    border-radius: 20px;
+    background-color: #A61BA9;
+    padding: 20px;
+}
+col {
+    
+    background-color: #A61BA9;
+    
+}
+.sasso {
+    border-radius: 20px;
+    height: 250px;
+    width: 300px;
+}
+
+
+ 
+
+ 
+
+ 
+ 
+ 
+
+ 
+
+ 
