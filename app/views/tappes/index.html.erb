@@ -8,35 +8,26 @@
 
 <br>
 
-<table class="table">
-  <thead>
-    <tr>
-      <th>Foto</th>
-      <th>Denominazione</th>
-      <th>Descrizione(ita)</th>
-      <th>Durata(ore)</th>
-      <th>Partecipanti</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
+<div class="container">
+  <div class="row row-cols-3">
     <% @tappes.each do |tappe| %>
-      <tr>
-        <td><% if tappe.cover.attached? %>
+    <div class="col">
+        <div class="card" style="width: 18rem;">
+        <% if tappe.cover.attached? %>
         <%= image_tag url_for(tappe.cover), class:"image img-thumbnail", class: 'imma' %>
-      <% end %></td>
-        <td><%= tappe.denominazione %></td>
-        <td class="desc"><%= tappe.descita %></td>
-        <td><%= tappe.durata %></td>
-        <td><%= tappe.partecipanti %></td>
-        <td><%= link_to 'Mostra', tappe, class:"btn btn-info w-100" %></td>
-        <td><%= link_to 'Modifica', edit_tappe_path(tappe), class:"btn btn-warning w-100" %></td>
-        <td><%= link_to 'Elimina', tappe, method: :delete, data: { confirm: 'SEI SICURO?' }, class:"btn btn-danger w-100" %></td>
-     </tr>
+        <% end %> 
+        <div class="card-body">
+          <h5 class="card-title"><%= tappe.denominazione %></h5>
+          <p class="card-text"><%= tappe.orari_partenza %></p>
+          <%= link_to 'Mostra', tappe, class:"btn btn-info w-100" %> <br><br>
+          <%= link_to 'Modifica', edit_tappe_path(tappe), class:"btn btn-warning w-100" %>
+          <%= link_to 'Elimina', tappe, method: :delete, data: { confirm: 'Sei sicuro?' }, class:"btn btn-danger w-100" %>
+        </div>
+      </div>
+    </div>
     <% end %>
-  </tbody>
-</table>
+  </div>
+</div>
 
 <br>
 

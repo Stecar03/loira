@@ -43,9 +43,9 @@ footer {
     padding: 20px;
     box-shadow: 10px 10px 5px darkslategray;
 }
-col {
+.col {
 padding: 20px;
-    background-color: #A61BA9;
+   
     
 }
 .sasso {
@@ -75,6 +75,7 @@ padding: 20px;
  
 .buttonn{
     width: 175px;
+    
 }
  
 .form-control::placeholder {
@@ -94,7 +95,13 @@ padding: 20px;
 }
 h5 {
     color: black;
+    font-size: 17px;
 }
 
+.catto {
+    padding: 10px;
+}
  
-
+.container {
+padding: 10 px;
+} 
