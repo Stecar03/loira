@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Denominazione:</strong>
+  <%= @tappe.denominazione %>
+</p>
+
+<p>
+  <strong>Descita:</strong>
+  <%= @tappe.descita %>
+</p>
+
+<p>
+  <strong>Descing:</strong>
+  <%= @tappe.descing %>
+</p>
+
+<p>
+  <strong>Partenza:</strong>
+  <%= @tappe.partenza %>
+</p>
+
+<p>
+  <strong>Orari partenza:</strong>
+  <%= @tappe.orari_partenza %>
+</p>
+
+<p>
+  <strong>Durata:</strong>
+  <%= @tappe.durata %>
+</p>
+
+<p>
+  <strong>Partecipanti:</strong>
+  <%= @tappe.partecipanti %>
+</p>
+
+<%= link_to 'Edit', edit_tappe_path(@tappe) %> |
+<%= link_to 'Back', tappes_path %>

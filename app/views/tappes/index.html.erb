@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Tappes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Denominazione</th>
+      <th>Descita</th>
+      <th>Descing</th>
+      <th>Partenza</th>
+      <th>Orari partenza</th>
+      <th>Durata</th>
+      <th>Partecipanti</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tappes.each do |tappe| %>
+      <tr>
+        <td><%= tappe.denominazione %></td>
+        <td><%= tappe.descita %></td>
+        <td><%= tappe.descing %></td>
+        <td><%= tappe.partenza %></td>
+        <td><%= tappe.orari_partenza %></td>
+        <td><%= tappe.durata %></td>
+        <td><%= tappe.partecipanti %></td>
+        <td><%= link_to 'Show', tappe %></td>
+        <td><%= link_to 'Edit', edit_tappe_path(tappe) %></td>
+        <td><%= link_to 'Destroy', tappe, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Tappe', new_tappe_path %>

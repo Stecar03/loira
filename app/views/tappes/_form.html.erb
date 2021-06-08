@@ -1,0 +1,52 @@
+<%= form_with(model: tappe) do |form| %>
+  <% if tappe.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(tappe.errors.count, "error") %> prohibited this tappe from being saved:</h2>
+
+      <ul>
+        <% tappe.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :denominazione %>
+    <%= form.text_field :denominazione %>
+  </div>
+
+  <div class="field">
+    <%= form.label :descita %>
+    <%= form.text_area :descita %>
+  </div>
+
+  <div class="field">
+    <%= form.label :descing %>
+    <%= form.text_area :descing %>
+  </div>
+
+  <div class="field">
+    <%= form.label :partenza %>
+    <%= form.text_field :partenza %>
+  </div>
+
+  <div class="field">
+    <%= form.label :orari_partenza %>
+    <%= form.text_field :orari_partenza %>
+  </div>
+
+  <div class="field">
+    <%= form.label :durata %>
+    <%= form.number_field :durata %>
+  </div>
+
+  <div class="field">
+    <%= form.label :partecipanti %>
+    <%= form.number_field :partecipanti %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

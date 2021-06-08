@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  denominazione: MyString
+  descita: MyText
+  descing: MyText
+  partenza: MyString
+  orari_partenza: MyString
+  durata: 1
+  partecipanti: 1
+
+two:
+  denominazione: MyString
+  descita: MyText
+  descing: MyText
+  partenza: MyString
+  orari_partenza: MyString
+  durata: 1
+  partecipanti: 1

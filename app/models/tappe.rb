@@ -1,0 +1,2 @@
+class Tappe < ApplicationRecord
+end
