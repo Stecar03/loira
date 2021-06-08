@@ -52,13 +52,38 @@ col {
     width: 300px;
 }
 
+.lilla {
+    color: black;
+    font-size: 20px;
+}
 
+.desc{
+    width: 500px;
+}
  
+.imma {
+    border-radius: 20px;
+    width: 250px;
+    height: 200px;
+}
 
+.table {
+    background-color: #F47D0F;
+}
  
-
+.buttonn{
+    width: 175px;
+}
  
- 
+.form-control::placeholder {
+    font-size: 0.95rem;
+    color: #aaa;
+    font-style: italic;
+  }
+  
+  .form-control.shadow-0:focus {
+    box-shadow: none;
+  }
  
 
  

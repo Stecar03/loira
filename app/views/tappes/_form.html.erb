@@ -11,42 +11,55 @@
     </div>
   <% end %>
 
+  <br>
+   
+  <div class="container" style="width: 700px">
+<body>
   <div class="field">
-    <%= form.label :denominazione %>
-    <%= form.text_field :denominazione %>
+    <%= form.label :denominazione, class:"lilla" %>
+    <%= form.text_field :denominazione, class:"form-control" %>
   </div>
-
+  <br>
   <div class="field">
-    <%= form.label :descita %>
-    <%= form.text_area :descita %>
+    <%= form.label :descrizione_ita, class:"lilla" %>
+    <%= form.text_area :descita, class:"form-control" %>
   </div>
-
+  <br>
   <div class="field">
-    <%= form.label :descing %>
-    <%= form.text_area :descing %>
+    <%= form.label :descrizione_ing, class:"lilla" %>
+    <%= form.text_area :descing, class:"form-control" %>
   </div>
-
+  <br>
   <div class="field">
-    <%= form.label :partenza %>
-    <%= form.text_field :partenza %>
+    <%= form.label :partenza, class:"lilla" %>
+    <%= form.text_field :partenza, class:"form-control" %>
   </div>
-
+  <br>
   <div class="field">
-    <%= form.label :orari_partenza %>
-    <%= form.text_field :orari_partenza %>
+    <%= form.label :orari_partenza, class:"lilla" %>
+    <%= form.text_field :orari_partenza, class:"form-control" %>
   </div>
-
+  <br>
   <div class="field">
-    <%= form.label :durata %>
-    <%= form.number_field :durata %>
+    <%= form.label :durata, class:"lilla" %>
+    <%= form.number_field :durata, class:"form-control" %>
   </div>
-
+  <br>
   <div class="field">
-    <%= form.label :partecipanti %>
-    <%= form.number_field :partecipanti %>
+    <%= form.label :partecipanti, class:"lilla" %>
+    <%= form.number_field :partecipanti, class:"form-control" %>
   </div>
-
+  <br>
+  <div class="field">
+  <%= form.label 'Foto', class:"lilla" %>
+  <%= form.file_field :cover, class:"form-control" %>
+ </div>
+ <br>
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit 'Crea Tappa', class:"btn btn-warning buttonn" %>
   </div>
+  </body>
+  </div>
+  
+
 <% end %>

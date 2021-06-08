@@ -1,4 +1,12 @@
+<br>
+
 <p id="notice"><%= notice %></p>
+
+<p>
+<% if @tappe.cover.attached? %>
+ <%= image_tag url_for(@tappe.cover), class:"image img-thumbnail", class: 'imma' %>
+ <% end %>
+</p>
 
 <p>
   <strong>Denominazione:</strong>
@@ -35,5 +43,16 @@
   <%= @tappe.partecipanti %>
 </p>
 
-<%= link_to 'Edit', edit_tappe_path(@tappe) %> |
-<%= link_to 'Back', tappes_path %>
+<%= link_to 'Modifica', edit_tappe_path(@tappe), class:"btn btn-warning buttonn" %> 
+
+
+
+<div style="padding: 10px"></div>
+
+
+
+<%= link_to 'Indietro', tappes_path, class:"btn btn-secondary buttonn" %>
+
+
+
+<div style="padding: 10px"></div>

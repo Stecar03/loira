@@ -25,7 +25,7 @@ class TappesController < ApplicationController
 
     respond_to do |format|
       if @tappe.save
-        format.html { redirect_to @tappe, notice: "Tappe was successfully created." }
+        format.html { redirect_to @tappe, notice: "La tappa è stata creata." }
         format.json { render :show, status: :created, location: @tappe }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class TappesController < ApplicationController
   def update
     respond_to do |format|
       if @tappe.update(tappe_params)
-        format.html { redirect_to @tappe, notice: "Tappe was successfully updated." }
+        format.html { redirect_to @tappe, notice: "La tappa è stata modificata." }
         format.json { render :show, status: :ok, location: @tappe }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -51,7 +51,7 @@ class TappesController < ApplicationController
   def destroy
     @tappe.destroy
     respond_to do |format|
-      format.html { redirect_to tappes_url, notice: "Tappe was successfully destroyed." }
+      format.html { redirect_to tappes_url, notice: "La tappa è stata distrutta." }
       format.json { head :no_content }
     end
   end
@@ -64,6 +64,6 @@ class TappesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def tappe_params
-      params.require(:tappe).permit(:denominazione, :descita, :descing, :partenza, :orari_partenza, :durata, :partecipanti)
+      params.require(:tappe).permit(:denominazione, :descita, :descing, :partenza, :orari_partenza, :durata, :partecipanti, :cover)
     end
 end

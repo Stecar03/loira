@@ -1,6 +1,12 @@
-<h1>Editing Tappe</h1>
+<br>
+<div class="d-flex justify-content-center text">
+    <h1>MODIFICA Tappa</h1>
+</div>
 
 <%= render 'form', tappe: @tappe %>
+<br>
+<%= link_to 'Mostra', @tappe, class:"btn btn-info buttonn" %> 
 
-<%= link_to 'Show', @tappe %> |
-<%= link_to 'Back', tappes_path %>
+<%= link_to 'Indietro', tappes_path, class:"btn btn-secondary buttonn" %>
+
+<div style="padding: 10px"></div>
