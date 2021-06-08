@@ -11,32 +11,41 @@
     </div>
   <% end %>
 
+  <div class="container" style="width: 700px">
+
   <div class="field">
-    <%= form.label :cognome %>
-    <%= form.text_field :cognome %>
+    <%= form.label :cognome, class:"lilla" %>
+    <%= form.text_field :cognome, class:"form-control" %>
   </div>
 
   <div class="field">
-    <%= form.label :nome %>
-    <%= form.text_field :nome %>
+    <%= form.label :nome, class:"lilla" %>
+    <%= form.text_field :nome, class:"form-control" %>
   </div>
 
   <div class="field">
-    <%= form.label :indirizzo %>
-    <%= form.text_field :indirizzo %>
+    <%= form.label :indirizzo, class:"lilla" %>
+    <%= form.text_field :indirizzo, class:"form-control" %>
   </div>
 
   <div class="field">
-    <%= form.label :numero %>
-    <%= form.number_field :numero %>
+    <%= form.label :numero, class:"lilla" %>
+    <%= form.number_field :numero, class:"form-control" %>
   </div>
 
   <div class="field">
-    <%= form.label :annotazioni %>
-    <%= form.text_area :annotazioni %>
+    <%= form.label :annotazioni, class:"lilla" %>
+    <%= form.text_area :annotazioni, class:"form-control" %>
   </div>
 
-  <div class="actions">
-    <%= form.submit %>
-  </div>
+<br>
+
+<div>
+  <%= form.submit 'Crea Utente', class:"btn btn-warning buttonn" %>
+</div>
+
+<br>
+
+</div>
+
 <% end %>

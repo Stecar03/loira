@@ -3,43 +3,44 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+<strong>Foto:</strong> <br>
 <% if @tappe.cover.attached? %>
- <%= image_tag url_for(@tappe.cover), class:"image img-thumbnail", class: 'imma' %>
+ <%= image_tag url_for(@tappe.cover), class:"image img-thumbnail", class: 'imma2' %>
  <% end %>
 </p>
 
 <p>
-  <strong>Denominazione:</strong>
+  <strong>Denominazione:</strong> <br>
   <%= @tappe.denominazione %>
 </p>
 
 <p>
-  <strong>Descita:</strong>
+  <strong>Descrizione(ita):</strong> <br>
   <%= @tappe.descita %>
 </p>
 
 <p>
-  <strong>Descing:</strong>
+  <strong>Description:</strong> <br>
   <%= @tappe.descing %>
 </p>
 
 <p>
-  <strong>Partenza:</strong>
+  <strong>Partenza:</strong> <br>
   <%= @tappe.partenza %>
 </p>
 
 <p>
-  <strong>Orari partenza:</strong>
+  <strong>Orari partenza:</strong> <br>
   <%= @tappe.orari_partenza %>
 </p>
 
 <p>
-  <strong>Durata:</strong>
+  <strong>Durata(ore):</strong> <br>
   <%= @tappe.durata %>
 </p>
 
 <p>
-  <strong>Partecipanti:</strong>
+  <strong>Partecipanti:</strong> <br>
   <%= @tappe.partecipanti %>
 </p>
 

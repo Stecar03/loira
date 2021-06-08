@@ -1,8 +1,14 @@
+<br>
+
 <p id="notice"><%= notice %></p>
 
-<h1>Utentes</h1>
+<div class="d-flex justify-content-center text">
+    <h1>UTENTI</h1>
+</div>
 
-<table>
+<br>
+
+<table class="table">
   <thead>
     <tr>
       <th>Cognome</th>
@@ -22,9 +28,9 @@
         <td><%= utente.indirizzo %></td>
         <td><%= utente.numero %></td>
         <td><%= utente.annotazioni %></td>
-        <td><%= link_to 'Show', utente %></td>
-        <td><%= link_to 'Edit', edit_utente_path(utente) %></td>
-        <td><%= link_to 'Destroy', utente, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Mostra', utente, class:"btn btn-info w-100" %></td>
+        <td><%= link_to 'Modifica', edit_utente_path(utente), class:"btn btn-warning w-100" %></td>
+        <td><%= link_to 'Elimina', utente, method: :delete, data:{ confirm: 'SEI SICURO?' }, class:"btn btn-danger w-100" %></td>
       </tr>
     <% end %>
   </tbody>
@@ -32,4 +38,6 @@
 
 <br>
 
-<%= link_to 'New Utente', new_utente_path %>
+<%= link_to 'Nuovo Utente', new_utente_path, class:"btn btn-success buttonn" %>
+
+<div style="padding: 20px"></div>

@@ -37,12 +37,14 @@ footer {
  }
 
  .card{
+     padding: 20px;
     border-radius: 20px;
     background-color: #A61BA9;
     padding: 20px;
+    box-shadow: 10px 10px 5px darkslategray;
 }
 col {
-    
+padding: 20px;
     background-color: #A61BA9;
     
 }
@@ -68,7 +70,7 @@ col {
 }
 
 .table {
-    background-color: #F47D0F;
+    background-color: #7FCD4F;
 }
  
 .buttonn{
@@ -85,7 +87,14 @@ col {
     box-shadow: none;
   }
  
+  .imma2 {
+    border-radius: 20px;
+    width: 550px;
+    height: 400px;
+}
+h5 {
+    color: black;
+}
 
  
 
- 

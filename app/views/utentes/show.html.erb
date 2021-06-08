@@ -1,29 +1,35 @@
+<br>
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Cognome:</strong>
+  <strong>Cognome:</strong> <br>
   <%= @utente.cognome %>
 </p>
 
 <p>
-  <strong>Nome:</strong>
+  <strong>Nome:</strong> <br>
   <%= @utente.nome %>
 </p>
 
 <p>
-  <strong>Indirizzo:</strong>
+  <strong>Indirizzo:</strong> <br>
   <%= @utente.indirizzo %>
 </p>
 
 <p>
-  <strong>Numero:</strong>
+  <strong>Numero:</strong> <br>
   <%= @utente.numero %>
 </p>
 
 <p>
-  <strong>Annotazioni:</strong>
+  <strong>Annotazioni:</strong> <br>
   <%= @utente.annotazioni %>
 </p>
 
-<%= link_to 'Edit', edit_utente_path(@utente) %> |
-<%= link_to 'Back', utentes_path %>
+<%= link_to 'Modifica', edit_utente_path(@utente), class:"btn btn-warning buttonn" %> 
+
+<div style="padding: 10px"></div>
+
+<%= link_to 'Indietro', utentes_path, class:"btn btn-secondary buttonn" %>
+
+<div style="padding: 10px"></div>

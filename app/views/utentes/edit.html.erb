@@ -1,6 +1,13 @@
-<h1>Editing Utente</h1>
+<br>
+
+<div class="d-flex justify-content-center text">
+    <h1>Modifica Utente</h1>
+</div>
 
 <%= render 'form', utente: @utente %>
 
-<%= link_to 'Show', @utente %> |
-<%= link_to 'Back', utentes_path %>
+<%= link_to 'MOSTRA', @utente, class:"btn btn-info buttonn" %> 
+
+<%= link_to 'INDIETRO', utentes_path, class:"btn btn-secondary buttonn" %>
+
+<div style="padding: 10px"></div>
